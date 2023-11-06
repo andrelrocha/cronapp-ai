@@ -1,0 +1,64 @@
+/*TELA DE LOGIN E CADASTRO*/
+.siginPanel {
+    background: #427D9D;
+}
+
+.login-view {
+    background: #427D9D;
+}
+
+.privacy-view .dialog-cookies {
+    background: #164863;
+}
+
+.btn.btn-default {
+    background: #164863;
+}
+
+
+/*TELA HOME E NAVBAR*/
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 15px;
+}
+
+.navbar-brand>img {
+    width: auto;
+    height: 150%;
+}
+
+.navbar {
+    background: #164863;
+}
+
+body {
+    background: #9BBEC8
+}
+
+
+/*BUTÕES TELA HOME CENTRALIZADOS*/
+.k-button, .btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin: 0 auto;
+    width: 55%;
+    height: 100%;
+    font-size: x-large;
+}
+
+
+/*TAMANHO CAMPO DE TEXTO*/
+input.k-textbox {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+}
+
+textarea.k-textbox, textarea.k-textbox:hover {
+    display: flex;
+    margin: 0 auto;
+}
+
+.form-control {
+    width: 90%;
+}

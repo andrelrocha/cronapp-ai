@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="" functionCategory="" library="false" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="Abrir Documentação" ruleName="Abrir Documentação" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="479.9000000000002" scrolly="-56.899999999999864" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <field customattributes="" name="NAME">getDocumentacaoFromUrl</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="coMseAlhF%;0_{_vv?Ik" multilayer="true" namespace="cronapi.screen.openUrl" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20url%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20abrir%20url%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Url%20de%20destino%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Nova%20aba?%20:%20L%C3%B3gico%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Largura%20:%20Inteiro%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Altura%20:%20Inteiro%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.openUrl','cronapi.screen.openUrl')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.openUrl}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Url de destino"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Nova aba?"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.LONG" name="Largura"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.LONG" name="Altura"/>
+        </mutation>
+        <value name="ARG0">
+          <shadow asynccall="false" colour="#5ba593" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="g9S9J,Dq=Stv[j$%areI" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">https://docs.cronapp.io/</field>
+          </shadow>
+        </value>
+        <value name="ARG2">
+          <shadow asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="E,8`{JM=0/`z^,BDC]aC" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field customattributes="" name="NUM">0</field>
+          </shadow>
+        </value>
+        <value name="ARG3">
+          <shadow asynccall="false" colour="#5b67a5" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="o+#ilC[F_8x,[FDRK~A]" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+            <field customattributes="" name="NUM">0</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+  </block>
+</blockly>
