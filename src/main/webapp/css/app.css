@@ -81,3 +81,13 @@ textarea.k-textbox, textarea.k-textbox:hover {
   height: 673px;
   min-height: 700px;
 }
+
+
+
+/*HOVER*/
+input.k-textbox,
+input.k-textbox:hover {
+  background: #DDF2FD; 
+  display: flex;
+  margin: 0 auto;
+}

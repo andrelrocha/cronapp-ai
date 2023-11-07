@@ -10,18 +10,22 @@ window.blockly.js.blockly.ChamarApiLocal = window.blockly.js.blockly.ChamarApiLo
  *
  *
  * @author Andre Lucio Rocha Wanderley
- * @since 07/11/2023, 14:32:46
+ * @since 07/11/2023, 15:41:30
  *
  */
 window.blockly.js.blockly.ChamarApiLocal.getLocalChatGPTApiArgs = [];
 window.blockly.js.blockly.ChamarApiLocal.getLocalChatGPTApi = async function() {
- var response, retornoAPI, item;
+ var retornoAPI, item, response;
   //
-  this.cronapi.util.getURLFromOthers('GET', 'application/json', 'http://localhost:8080/chat?userInput=say%20hello', null, null, async function(sender_retornoAPI) {
+  this.cronapi.util.getURLFromOthers('POST', 'application/json', 'http://localhost:8080/chat', this.cronapi.json.createObjectFromString(['{\n	\"input\": \"',this.cronapi.screen.getValueOfField("vars.inputPergunta"),'\"\n}'].join('')), null, async function(sender_retornoAPI) {
       retornoAPI = sender_retornoAPI;
     //
-    console.log(retornoAPI);
+    response = this.cronapi.json.getProperty(retornoAPI, 'choices.message.content');
+    //
+    this.cronapi.screen.changeValueOfField("vars.outputPergunta", response);
   }.bind(this), async function(sender_item) {
       item = sender_item;
+    //
+    this.cronapi.screen.changeValueOfField("vars.outputPergunta", 'Houve algo de errado na requisição, tente novamente mais tarde');
   }.bind(this));
 }
